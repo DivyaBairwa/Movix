@@ -9,7 +9,6 @@ const useFetch = (url) => {
     setLoading("loading...");
     setData(null);
     setError(null);
-
     fetchDataFromApi(url)
       .then((res) => {
         setLoading(false);
